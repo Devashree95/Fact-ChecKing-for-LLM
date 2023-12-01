@@ -119,7 +119,7 @@ def check_fact_with_context(query, documents, openai_api_key):
 test_examples = [
     [
         "Deductive reasoning is a form of illogical thinking that uses unrelated observations to arrive at a specific conclusion. This type of reasoning is common in descriptive science.",
-        "inaccurate"],
+        "inaccurate"]
 ]
 
 for i, example in enumerate(test_examples):
