@@ -1,5 +1,1 @@
-# Fact-ChecKing-for-LLM
-
-Part 1:
-
-Part 2:
+# Doc2Vec
