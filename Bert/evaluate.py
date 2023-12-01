@@ -1,3 +1,4 @@
+# Required imports for the script
 import httpx
 from sentence_transformers import SentenceTransformer
 import re
@@ -5,9 +6,12 @@ import json
 import config
 import openai
 
+# Set the OpenAI API key from the configuration
 openai_api_key = config.openai_key
 
-
+"""
+    Queries the Supabase database using an embedding generated from the query document.
+"""
 def query_supabase_with_embedding(query_document, model):
     # Generate a vector for the query document
     query_vector = model.encode(query_document).tolist()  # Convert the text to an embedding list
@@ -41,10 +45,13 @@ def query_supabase_with_embedding(query_document, model):
         return ["error in RAG"]
 
 
-# Example usage
+# Initialize the SentenceTransformer model
 model = SentenceTransformer(config.model_name)
 
 
+"""
+    Extracts JSON or SQL code snippets from the provided text.
+"""
 def fetch_json_subparts(text):
     # This regex captures content between the outermost curly braces
     match = re.search(r'({.*})', text, re.DOTALL)
@@ -64,7 +71,9 @@ def fetch_json_subparts(text):
         print(f"ERROR in JSON ! {e}")
         return "error"
 
-
+"""
+    Continues a conversation with GPT-4 using the provided prompt.
+"""
 def continue_conversation(prompt):
     response = openai.ChatCompletion.create(model="gpt-4-0314", top_p=0,
                                             messages=prompt,
@@ -72,15 +81,15 @@ def continue_conversation(prompt):
     return response['choices'][0]['message']['content'].strip()
 
 
-def check_fact_with_context(query, documents, openai_api_key):
-    """
+"""
     Check the factual accuracy of a query using OpenAI's GPT-4 with context from retrieved documents.
 
     :param query: The query or statement to be checked.
     :param documents: A list of documents that provide context for the query.
     :param openai_api_key: Your OpenAI API key.
     :return: The model's response regarding the factual accuracy of the query.
-    """
+"""
+def check_fact_with_context(query, documents, openai_api_key):
     openai.api_key = openai_api_key
 
     # Prepare the context by concatenating document contents
@@ -115,7 +124,7 @@ def check_fact_with_context(query, documents, openai_api_key):
     return response
 
 
-## Add test examples here
+## Test the fact-checking process with examples
 test_examples = [
     [
         "Deductive reasoning is a form of illogical thinking that uses unrelated observations to arrive at a specific conclusion. This type of reasoning is common in descriptive science.",
