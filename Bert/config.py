@@ -1,5 +1,5 @@
 ### Supabase
-SUPABASE_URL = "https://tmwcifbhcnkaiqsldmlz.supabase.co"
+SUPABASE_URL = "https://tmwcifbhaiqsldmlz.supabase.co"
 SUPABASE_SERVICE_API_KEY = "Please provide your key here"
 
 ### Open AI
