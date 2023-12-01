@@ -8,7 +8,7 @@ web_url = 'https://www.geeksforgeeks.org/machine-learning/'
 ### SUPABASE DB
 
 #Please provide you own URL and key here while running
-supabase_url = "https://mufqacshyjgmzivznuwo.supabase.co"
+supabase_url = "https://mufqshyjgmzivznuwo.supabase.co"
 supabase_key = "Please provide your key here"
 client = create_client(supabase_url, supabase_key)
 #Please change the table name to your table name
