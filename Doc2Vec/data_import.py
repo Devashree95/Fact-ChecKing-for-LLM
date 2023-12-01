@@ -80,7 +80,7 @@ class dataImport:
                         vector = model.infer_vector(embedding.preprocess_sentence(chunk["text"])).tolist()
                         vector_data = json.dumps(vector)
 
-                        Prepare the data to be inserted 
+                        #Prepare the data to be inserted 
                         data_to_insert = {
                             "source": chunk["source"],
                             "text": chunk["text"],
