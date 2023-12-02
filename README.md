@@ -18,7 +18,8 @@ Web URL: https://www.geeksforgeeks.org/machine-learning/
 
 # Prerequisites:  
 1. OpenAI access key  
-2. Supabase account (To store the vector data)  
+2. Supabase account (To store the vector data)
+   Create account on https://supabase.com/ and create your project  
 
 Please follow following instructions to run the code:  
 # Notebooks:  
