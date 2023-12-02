@@ -6,8 +6,9 @@ Large Language Models (LLMs) are increasingly being integrated into educational 
 ![image](https://github.com/Devashree95/Fact-ChecKing-for-LLM/assets/122653285/23b106d7-3770-47e3-8bcb-7e415022963c)
 
 This project is divided in 2 parts:  
-1. Doc2Vec
-2. BERT
+We have implemented fact checking using following 2 embedding models:  
+1. Doc2Vec  
+2. BERT  
 
 Same data can be used as knowledge source for both of these parts.  
 
