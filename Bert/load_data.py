@@ -8,6 +8,8 @@
 
 # Make necessary imports
 import PyPDF2
+import re
+import json
 import nltk
 import config
 import os
@@ -17,6 +19,10 @@ from sentence_transformers import SentenceTransformer
 from supabase import create_client, Client
 from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTTextContainer
+import httpx
+from sentence_transformers import SentenceTransformer
+import openai
+
 
 # Load the pretrained Sentence Transformers model
 model = SentenceTransformer(config.model_name)
