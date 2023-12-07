@@ -12,7 +12,7 @@ supabase_url = "https://mufqshyjgmzivznuwo.supabase.co"
 supabase_key = "Please provide your key here"
 client = create_client(supabase_url, supabase_key)
 #Please change the table name to your table name
-table_name = "combined_test"
+table_name = "vector_final"
 
 headers = {
     "apikey": supabase_key,
@@ -20,7 +20,7 @@ headers = {
 }
 
 # Please change the table name to your table name
-endpoint = f"{supabase_url}/rest/v1/combined_test"
+endpoint = f"{supabase_url}/rest/v1/vector_final"
 
 ### Config for text splitter
 # Text splitter
