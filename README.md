@@ -1,9 +1,9 @@
 # Fact-ChecKing-for-LLM
-Group no. 4
-Author names:
-Devshree Bhagwat (devashreeb@vt.edu)
-Nikita Yeole (nikitay@vt.edu)
-Manar Aljohani (manara@vt.edu)
+Group no. 4  
+Author names:  
+Devshree Bhagwat (devashreeb@vt.edu)  
+Nikita Yeole (nikitay@vt.edu)  
+Manar Aljohani (manara@vt.edu)  
 
 # Introduction:<br>
 Large Language Models (LLMs) are increasingly being integrated into educational system. They offer scalable and adptive learning solutions. But some times, LLMs can generate inaccurate and misleading information. This is particularly concerning for educational settings. We have implemented a fact checking system for educational content using RAG(Retrival Augmented Generation) technique. Our project follows following methodology:
