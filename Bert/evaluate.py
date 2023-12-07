@@ -5,6 +5,14 @@ import re
 import json
 import config
 import openai
+import PyPDF2
+import nltk
+import os
+from nltk.tokenize import word_tokenize
+from sentence_transformers import SentenceTransformer
+from supabase import create_client, Client
+from pdfminer.high_level import extract_pages
+from pdfminer.layout import LTTextContainer
 
 # Set the OpenAI API key from the configuration
 openai_api_key = config.openai_key
