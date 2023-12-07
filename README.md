@@ -29,7 +29,7 @@ Web URL: https://www.geeksforgeeks.org/machine-learning/
 
 Please follow following instructions to run the code:  
 # Notebooks:  
-The Doc2Vec.ipynb and bert.ipynb notebooks uploaded in "Notebooks" directory can be used to go through the complete process from data load to model evaluation. These notebooks contain most of the main functionality of our project and have been created to simplify the code run.  
+The Doc2Vec.ipynb and bert.ipynb notebooks uploaded in "Notebooks" directory can be used to go through the complete process from data load to model evaluation. These notebooks contain all of the main functionality of our project and have been created to simplify the code run.  
 
 # Doc2Vec:  
 1. Update config.py file with your supabase and openai credentials and table details.  
