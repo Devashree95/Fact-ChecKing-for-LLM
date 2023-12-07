@@ -3,7 +3,7 @@
 1. Update config.py file with your supabase and openai credentials and table details.
 2. Save the PDF files in input directory
 3. Run train.py to train and save Doc2Vec model.
-4. Create a table in Supabase with required structure before running the data load script.
+4. Create a table in Supabase manually with required structure before running the data load script.
    Required structire:  
    # Add following 3 columns in the table with corresponding data types:
 # 1. source : text
