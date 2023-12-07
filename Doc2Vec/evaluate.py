@@ -1,14 +1,24 @@
 # make necessary imports
-import openai
-from gensim.models.doc2vec import Doc2Vec
-import create_embeddings
-from supabase import create_client, Client
-from sklearn.metrics.pairwise import cosine_similarity
-import config
+import requests
+from bs4 import BeautifulSoup
+import httpx
+import json
 import time
-import ast
-import numpy as np
-import pandas as pd
+import re
+import matplotlib.pyplot as plt
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from supabase import create_client
+import PyPDF2
+import nltk
+from nltk.tokenize import word_tokenize
+from gensim.models.doc2vec import Doc2Vec, TaggedDocument
+from nltk.corpus import stopwords
+import os
+import openai
+import json
+from supabase import create_client, Client
+from IPython.display import display
+from sklearn.metrics.pairwise import cosine_similarity
 
 embedding = create_embeddings.embedding
 openai.api_key = config.openai_key
